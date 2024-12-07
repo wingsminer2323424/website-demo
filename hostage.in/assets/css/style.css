@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #2c3550;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #34426d;
+    border-radius: 6px;
+    transition: ease-in-out all .4s;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #292d38;
+  }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+.taskbar-icon {
+    transition: all 0.3s ease;
+}
+.taskbar-icon:hover {
+    transform: scale(1.1);
+}
+.start-menu {
+    transition: all 0.3s ease;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.start-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+}
