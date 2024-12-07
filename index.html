@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="olp.png"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olp.lol</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+
+        #clickPrompt {
+            font-size: 24px;
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        #roles {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            padding: 10px;
+            font-size: 14px;
+            max-width: 300px;
+            color: #ffffff;
+            text-align: left;
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+        }
+
+            #roles h2 {
+                font-size: 16px;
+                margin: 10px 0 5px;
+                color: #ff00ff;
+                border-bottom: 1px solid #ff00ff;
+                padding-bottom: 5px;
+            }
+
+            #roles p {
+                margin: 5px 0;
+            }
+
+            #roles strong {
+                color: #ff00ff;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <h1>olp GG try harder next time.</h1>
+    <div id="clickPrompt">Click Anywhere...</div>
+
+    <div id="roles">
+        <h2>Owners</h2>
+        <p><strong>@providate</strong></p>
+        <p><strong>@aimbotfr</strong></p>
+    </div>
+        <div id="Socials">
+            <h4>Socials</h4>
+            <a href="https://t.me/+pwGvz5HYck4wNTUx">
+                <button Style="background-color:white; color:rebeccapurple; border-radius:5px;">Telegram</button>
+                <a>
+                    <a href="https://discord.gg/dAPYcerfrc">
+                        <button Style="background-color:white; color:rebeccapurple; border-radius:5px;">Discord</button>
+                        <a>
+                            <a href="ClownsPage.html">
+                                <button Style="background-color:white; color:rebeccapurple; border-radius:5px;">Clowns</button>
+                                <a>
+                            <audio id="audio" src="https://files.catbox.moe/9kj0ou.mp3"></audio>
+
+                            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+                            <script>
+                                document.body.addEventListener('click', function () {
+                                    document.getElementById('audio').play();
+                                    document.getElementById('clickPrompt').style.display = 'none';
+                                });
+
+                                particlesJS("particles-js", {
+                                    "particles": {
+                                        "number": {
+                                            "value": 100,
+                                            "density": {
+                                                "enable": true,
+                                                "value_area": 800
+                                            }
+                                        },
+                                        "color": {
+                                            "value": "#ffffff"
+                                        },
+                                        "shape": {
+                                            "type": "circle",
+                                            "stroke": {
+                                                "width": 0,
+                                                "color": "#000000"
+                                            }
+                                        },
+                                        "opacity": {
+                                            "value": 0.6,
+                                            "random": true,
+                                            "anim": {
+                                                "enable": false,
+                                                "speed": 1,
+                                                "opacity_min": 0.1,
+                                                "sync": false
+                                            }
+                                        },
+                                        "size": {
+                                            "value": 3,
+                                            "random": true,
+                                            "anim": {
+                                                "enable": false,
+                                                "speed": 40,
+                                                "size_min": 0.1,
+                                                "sync": false
+                                            }
+                                        },
+                                        "line_linked": {
+                                            "enable": false
+                                        },
+                                        "move": {
+                                            "enable": true,
+                                            "speed": 1,
+                                            "direction": "bottom",
+                                            "random": false,
+                                            "straight": false,
+                                            "out_mode": "out",
+                                            "bounce": false,
+                                            "attract": {
+                                                "enable": false,
+                                                "rotateX": 600,
+                                                "rotateY": 1200
+                                            }
+                                        }
+                                    },
+                                    "interactivity": {
+                                        "detect_on": "canvas",
+                                        "events": {
+                                            "onhover": {
+                                                "enable": false,
+                                                "mode": "repulse"
+                                            },
+                                            "onclick": {
+                                                "enable": false
+                                            },
+                                            "resize": true
+                                        }
+                                    },
+                                    "retina_detect": true
+                                });
+
+                                function disableDevTools() {
+                                    window.addEventListener('keydown', function (event) {
+                                        if (event.key === 'I' || event.key === 'i' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+                                            event.preventDefault();
+                                            return false;
+                                        }
+                                    });
+                                    window.addEventListener('contextmenu', function (event) {
+                                        event.preventDefault();
+                                    });
+                                }
+                                disableDevTools();
+                            </script>
+</body>
+</html>
